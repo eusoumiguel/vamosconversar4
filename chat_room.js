@@ -23,7 +23,7 @@ firebase.initializeApp(firebaseConfig);
       localStorage.removeItem("user_name");
       localStorage.removeItem("Room_name");
   
-      location = "chat_page.html"
+      location = "index.html"
   }
   }
   function getData() { firebase.database().ref("/").on('value', function(snapshot) {document.getElementById("outout").innetHTML = ""; 
@@ -44,9 +44,6 @@ function carregaSala(sala) {
     localStorage.setItem("Room_name", Room_name);
     location = "chat.html";
 }
-
-
-  
   
   localStorage.setItem("user_name", user_name);
 
